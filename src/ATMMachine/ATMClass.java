@@ -14,17 +14,26 @@ will prompt for an id again. Thus, once the system starts, it will not stop.
     private double balance;
     private double deposit;
     private double withdraw;
+    private int id;
 
 
     public ATMClass() {
     }
 
-    public ATMClass(double balance, double deposit, double withdraw) {
-        this.balance = 0;
+    public ATMClass(double balance, double deposit, double withdraw, int id) {
+        this.balance = 100;
         this.deposit = 0;
         this.withdraw = 0;
+        this.id=id;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public double getBalance() {
         return balance;
