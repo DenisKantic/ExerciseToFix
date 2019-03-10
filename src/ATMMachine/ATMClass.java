@@ -24,7 +24,7 @@ will prompt for an id again. Thus, once the system starts, it will not stop.
         this.balance = 100;
         this.deposit = 0;
         this.withdraw = 0;
-        this.id=id;
+        this.id=0;
     }
 
     public int getId() {
